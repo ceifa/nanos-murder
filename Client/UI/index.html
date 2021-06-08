@@ -1,0 +1,27 @@
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<script src="https://unpkg.com/vue@next"></script>
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="global.css">
+</head>
+
+<body>
+	<div id="root">
+		<div v-if="state == 2" class="preparing">
+			<div v-if="murder" class="text murder">
+				You are a murderer
+			</div>
+			<div v-if="!murder" class="text bystander">
+				You are a bystander
+			</div>
+		</div>
+		<div class="waiting" v-if="state == 1" class="waiting">
+			Waiting for players
+		</div>
+	</div>
+</body>
+<script src="index.js"></script>
+
+</html>

@@ -1,0 +1,29 @@
+body {
+	font-family: Roboto, sans-serif;
+	font-size: 3em;
+	overflow: hidden;
+}
+
+.waiting {
+	color: white;
+	text-align: center;
+	margin-top: 50%;
+}
+
+.preparing {
+	padding-top: 10%;
+	height: 100vh;
+	background-color: black;
+}
+
+.preparing .text {
+	text-align: center;
+}
+
+.murder {
+	color: red;
+}
+
+.bystander {
+	color: aqua;
+}
